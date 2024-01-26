@@ -26,6 +26,13 @@ function Form() {
     e.preventDefault();
     addIncome(inputState);
     getIncomes();
+    setInputState({
+      title: "",
+      amount: "",
+      date: "",
+      category: "",
+      description: "",
+    });
   };
 
   return (
@@ -127,8 +134,13 @@ const FormStyled = styled.form`
   }
 
   .input-control {
-    input {
-      width: 100%;
+    width: 100%; // Set width to 100%
+    input,
+    select {
+      width: 100%; // Set width to 100%
+    }
+    .react-datepicker-wrapper {
+      width: 100%; // Set width for the DatePicker wrapper
     }
   }
 
