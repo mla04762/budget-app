@@ -8,10 +8,10 @@ function Navigation({ active, setActive }) {
   return (
     <NavStyled>
       <div className="user-con">
-        <img src={avatar} alt="" />
+        {/* <img src={avatar} alt="" /> */}
         <div className="text">
-          <h2>Mike</h2>
-          <p>Your Money</p>
+          <h2>Gideon</h2>
+          <p>My Money</p>
         </div>
       </div>
       <ul className="menu-items">
